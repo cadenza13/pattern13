@@ -1,0 +1,192 @@
+.title{
+  position: relative;
+  width: 300px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.title.hidden{
+  display: none;
+}
+
+.title > p{
+  font-size: 12px;
+  margin: 10px 0 30px;
+}
+
+.title > .field{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title > .field > fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+.title > .field > fieldset > legend{
+  font-size: 18px;
+}
+
+.title > .field > fieldset > label{
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.title > .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title > .buttons > button{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(80, 80, 200);
+  box-shadow: 0 4px 0 rgb(40, 40, 150);
+}
+
+.title > .buttons > button + button{
+  background-color: rgb(200, 80, 200);
+  box-shadow: 0 4px 0 rgb(150, 40, 150);
+}
+
+.title > .rule{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 280px;
+  border-radius: 12px;
+  border: 4px solid #aaa;
+  text-align: left;
+  background-color: rgb(10, 120, 30);
+}
+
+.title > .rule.hidden{
+  display: none;
+}
+
+.title > .rule > ul{
+  margin: 20px 12px 0 0;
+}
+
+.title > .rule > ul > li{
+  list-style: disc;
+  margin: 0 0 16px 28px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.title > .rule > button{
+  display: block;
+  width: 220px;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 0;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(200, 80, 80);
+  box-shadow: 0 4px 0 rgb(150, 40, 40);
+}
+
+.result{
+  width: 300px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.result.hidden{
+  display: none;
+}
+
+.result > h1{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.result > img{
+  width: 100px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.result > p{
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.result > a{
+  font-size: 16px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(150, 220, 70);
+  box-shadow: 0 4px 0 rgb(100, 180, 30);
+}
+
+main{
+  width: 300px;
+  margin: 30px auto 0;
+}
+
+main.hidden{
+  display: none;
+}
+
+main > .display{
+  width: 300px;
+  height: 300px;
+  background-color: #111;
+}
+
+main > .display > p{
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 300px;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+main > .display > p.finish{
+  font-size: 25px;
+}
+
+main > form{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main > form.hidden{
+  display: none;
+}
+
+main > form > input{
+  font-size: 18px;
+  text-align: center;
+  width: 150px;
+  border: 1px solid #111;
+  border-radius: 4px;
+}
+
+main > form > button{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 12px 4px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(70, 150, 220);
+  box-shadow: 0 4px 0 rgb(30, 100, 180);
+}

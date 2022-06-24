@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フラッシュ暗算</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="title">
+    <img src="img/LOGO.png" alt="ロゴ画像">
+    <p>数字の桁数、問題数、表示の時間を変更できます。</p>
+    <div class="field">
+      <fieldset>
+        <legend>数字の桁数</legend>
+        <label><input class="number" type="radio" name="number" value="10" checked>1ケタ</label>
+        <label><input class="number" type="radio" name="number" value="100">2ケタ</label>
+        <label><input class="number" type="radio" name="number" value="1000">3ケタ</label>
+      </fieldset>
+      <fieldset>
+        <legend>問題数</legend>
+        <label><input class="count" type="radio" name="count" value="5" checked>5問</label>
+        <label><input class="count" type="radio" name="count" value="10">10問</label>
+        <label><input class="count" type="radio" name="count" value="15">15問</label>
+      </fieldset>
+      <fieldset>
+        <legend>表示の時間</legend>
+        <label><input class="speed" type="radio" name="speed" value="1000" checked>1秒</label>
+        <label><input class="speed" type="radio" name="speed" value="500">0.5秒</label>
+        <label><input class="speed" type="radio" name="speed" value="200">0.2秒</label>
+      </fieldset>
+    </div>
+    <div class="buttons">
+      <button id="start">GAME START!</button>
+      <button id="open">ゲームの説明</button>
+    </div>
+
+    <div class="rule hidden">
+      <ul>
+        <li>シンプルなフラッシュ暗算です。</li>
+        <li>桁数、問題数、表示時間を選択して難易度を変えられます。</li>
+        <li>全て足した答えを半角数字で入力してください。</li>
+        <li>正解した時の称号は、難易度に応じて変化します。</li>
+      </ul>
+      <button id="close">ゲームの説明を閉じる</button>
+    </div>
+  </div>
+
+  <div class="result hidden">
+    <h1></h1>
+    <img src="" alt="当否判定">
+    <p></p>
+    <a href="index.html">タイトルに戻る</a>
+  </div>
+
+  <main class="hidden">
+    <div class="display"><p></p></div>
+    <form action="" class="hidden">
+      <input type="text">
+      <button id="answer">ANSWER</button>
+    </form>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
